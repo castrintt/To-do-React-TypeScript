@@ -20,14 +20,21 @@ const EditList = (props: Props) => {
       difficulty: "",
     });
   };
-  const [newTitle, setNewTitle] = React.useState<string>("");
+  const [editTask, setEditTask] = React.useState<{
+    title: string;
+    difficulty: string;
+  }>({
+    title: "",
+    difficulty: "",
+  });
 
   const editObject = {
     editObject: props.formData,
     setFormData: props.setFormData,
     editTitle: props.compareDataToEdit.title,
-    titleEvent: newTitle,
-    difficultyEvent: props.compareDataToEdit.difficulty,
+    editDifficulty: props.compareDataToEdit.difficulty,
+    titleEvent: editTask.title,
+    difficultyEvent: editTask.difficulty,
   };
 
   return (
@@ -53,9 +60,11 @@ const EditList = (props: Props) => {
             <input
               type="text"
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                setNewTitle(e.target.value);
+                setEditTask({
+                  ...editTask,
+                  title: e.target.value,
+                });
               }}
-              value={newTitle}
             />
           </div>
           <div>
@@ -63,8 +72,8 @@ const EditList = (props: Props) => {
             <input
               type="text"
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                props.setCompareDataToEdit({
-                  ...props.compareDataToEdit,
+                setEditTask({
+                  ...editTask,
                   difficulty: e.target.value,
                 });
               }}
