@@ -1,0 +1,128 @@
+.blackScreen__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index: 5;
+}
+
+.container__modal {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 3px 5px 8px rgba(128, 128, 128, 0.404);
+}
+.older__data {
+  height: 5rem;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.older__data > h2 {
+  font-size: 1.3rem;
+}
+.older__data > div {
+  display: flex;
+  width: 100%;
+}
+.older__data > div > p {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.container__modal > h2 {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container__modal > form {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container__modal > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.container__modal > form > div > input {
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.705);
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.container__modal > form > input {
+  margin-top: 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.container__modal > form > div > input {
+  width: 90%;
+}
+
+.buttons {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+
+.buttons > button {
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.buttons > button:first-child {
+  position: relative;
+  left: -1rem;
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+}
+
+.buttons > button:last-child {
+  border: 1px solid #3dbac7;
+  color: #3dbac7;
+  background-color: transparent;
+}

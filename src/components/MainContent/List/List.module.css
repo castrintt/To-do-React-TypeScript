@@ -1,0 +1,56 @@
+.container__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.container__list > ul {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container__list > ul > li {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  padding-bottom: 2rem;
+}
+
+.container__list > ul > li > :where(div, section) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container__list > ul > li > section {
+  height: 80%;
+}
+
+.container__list > ul > li > div > button {
+  border: none;
+  outline: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container__list > ul > li > div > button > i {
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+  left: -0.2rem;
+}
+
+.container__list > ul > li > div > button:last-child {
+  margin-top: 0.5rem;
+}

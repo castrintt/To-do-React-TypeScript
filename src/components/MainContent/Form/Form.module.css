@@ -1,0 +1,47 @@
+.form__container {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form__container > div {
+  height: 4rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form__container > div > label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.form__container > div > input {
+  width: 100%;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+  outline: none;
+}
+
+.form__container > input {
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blocked__button {
+  cursor: default !important;
+  color: white;
+}

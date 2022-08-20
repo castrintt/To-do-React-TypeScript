@@ -1,0 +1,18 @@
+.main__content {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main__content > section {
+  width: 50%;
+}
+
+.main__content > section > h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
